@@ -56,7 +56,7 @@ const handleLoadCategory = async (categoryId) => {
     
       <figure class="relation" >
      
-        <img class="w-[312px] h-[200px]"
+        <img class="w-[312px] h-[200px] rounded-md"
         src="${category.thumbnail}"
         alt="image"
         />
