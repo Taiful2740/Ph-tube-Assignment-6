@@ -18,7 +18,7 @@ const loadCategory = async () => {
 
     div.innerHTML = `
     <button onclick="handleLoadCategory('${category?.category_id}')" 
-    class="btn active bg-gray hover:bg-[#FF1F3D] text-lg hover:text-white rounded-md"> <a 
+    class=" btn active bg-gray hover:bg-[#FF1F3D] text-lg hover:text-white rounded-md"> <a 
     class="tab hover:text-white">${category.category}</a> </button>
     `;
     categoryContainer.appendChild(div);
@@ -65,7 +65,7 @@ const handleLoadCategory = async (categoryId) => {
      
      ${
        postedDate
-         ? `<p class="w-[170px] text-center bg-black text-sm text-white rounded-[4px] px-[4px] py-[2px] -mt-8 ml-[130px]">${hours} hrs ${minutes} min ago</p>`
+         ? `<p class="w-[170px] text-center bg-[#0000009a] text-sm text-white rounded-[4px] px-[4px] py-[2px] -mt-8 ml-[130px]">${hours} hrs ${minutes} min ago</p>`
          : ""
      } 
      </div>
