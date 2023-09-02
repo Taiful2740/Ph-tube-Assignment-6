@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Question</title>
+
+    <!-- google font  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        font-family: "Space Grotesk", sans-serif;
+      }
+    </style>
+
+    <!-- DaisyUI  -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="max-w-screen-xl mx-auto">
+    <section>
+      <h1 class="text-center text-6xl font-extrabold my-10 text-orange-600">
+        Some Important Question
+      </h1>
+      <div>
+        <h2 class="text-2xl font-semibold m-6 text-orange-600">
+          1. Question: Discuss the scope of var, let, and const.
+        </h2>
+        <p class="text-2xl text-justify font-semibold m-6 text-green-600">
+          Answer: var declarations are globally scoped or function scoped while
+          let and const are block scoped. var variables can be updated and
+          re-declared within its scope; let variables can be updated but not
+          re-declared; const variables can neither be updated nor re-declared.
+          They are all hoisted to the top of their scope. But while var
+          variables are initialized with undefined, let and const variables are
+          not initialized. While var and let can be declared without being
+          initialized, const must be initialized during declaration.
+        </p>
+      </div>
+      <div>
+        <h2 class="text-2xl font-semibold m-6 text-orange-600">
+          2. Question: Tell us the use cases of null and undefined.
+        </h2>
+        <p class="text-2xl text-justify font-semibold m-6 text-green-600">
+          Answer: Undefined vs Null Undefined means the variable has been
+          declared, but its value has not been assigned. Null means an empty
+          value or a blank value. The typeof() operator returns undefined for an
+          undefined variable. The typeof() operator returns the type as an
+          object for a variable whose value is assigned as null.
+        </p>
+      </div>
+      <div>
+        <h2 class="text-2xl font-semibold m-6 text-orange-600">
+          3. Question: What do you mean by REST API?
+        </h2>
+        <p class="text-2xl text-justify font-semibold m-6 text-green-600">
+          Answer: What is a REST API? An API, or application programming
+          interface, is a set of rules that define how applications or devices
+          can connect to and communicate with each other. A REST API is an API
+          that conforms to the design principles of the REST, or
+          representational state transfer architectural style.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

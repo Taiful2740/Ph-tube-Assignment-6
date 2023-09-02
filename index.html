@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="shortcut icon" href="./img/Logo.png" type="image/x-icon" />
+
+    <!-- google font  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        font-family: "Space Grotesk", sans-serif;
+      }
+    </style>
+
+    <!-- DaisyUI  -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="max-w-screen-xl mx-auto">
+    <header>
+      <!-- navbar section  -->
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <img src="./img/Logo.png" alt="logo" />
+          </div>
+          <div class="navbar-center">
+            <button
+              onclick="ViewsSortBy()"
+              id="sort-btn"
+              class="text-black bg-gray-300 rounded-xl py-2 px-4"
+            >
+              Sort by view
+            </button>
+          </div>
+          <div class="navbar-end">
+            <button
+              class="bg-red-600 text-white rounded-xl py-2 px-4"
+              title="button title"
+              class="action primary tocart"
+              onclick=" window.open('question.html', '_blank'); return false;"
+            >
+              Blog
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- category section  -->
+    <div class="category-container w-full">
+      <div class="tabs d flex justify-center" id="category-container">
+        <!-- <a class="tab">Tab 1</a>
+        <a class="tab">Tab 2</a>
+        <a class="tab">Tab 3</a> -->
+      </div>
+    </div>
+    <div
+      id="card-container"
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
+    ></div>
+
+    <div id="sort-photo-container" class="flex justify-center mt-10"></div>
+    <script src="js/test.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
